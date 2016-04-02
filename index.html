@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <title>Color-Coded Calculator</title>
+
+
+  <!-- Loading JQuery
+  ––––––––––––––––––––––––––––––––––––––––––––––––––   -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+
+
+  <script src="application.js"></script>
+
+  <script language="JavaScript">
+
+
+
+  </script>
+
+  <!-- Mobile Specific Metas
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="icon" type="image/png" href="images/xxxxx.png">   -->
+  <link rel="stylesheet" type="text/css" href="css/Color-CodeCalc.css">
+	<style>
+
+	</style>
+</head>
+
+
+<body>
+  <h1>Color-Coded Calculator --Home</h1>
+
+  <a href="about.html">About this App</a>
+  <br>
+  <!--
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main>
+
+	 <section class="left-side">
+		<div class="digit-key-panel">
+
+			<input id="digit0" type="button" data-digitval ="0" />
+			<input id="digit1" type="button" data-digitval ="1" />
+			<input id="digit2" type="button" data-digitval ="2" />
+			<input id="digit3" type="button" data-digitval ="3" />
+			<input id="digit4" type="button" data-digitval ="4" /><br>
+			<input id="digit5" type="button" data-digitval ="5" />
+			<input id="digit6" type="button" data-digitval ="6" />
+			<input id="digit7" type="button" data-digitval ="7" />
+			<input id="digit8" type="button" data-digitval ="8" />
+			<input id="digit9" type="button" data-digitval ="9" /><br>
+			<input id="dec-point" type="button" data-digitval ="." value ="."/>
+		</div>
+
+		<div class="op-key-panel">
+			<input type="button" class="op-key op-plus" value="+">
+			<input type="button" class="op-key op-minus" value="-">
+			<input type="button" class="op-key op-div" value="*">
+			<input type="button" class="op-key op-mult" value="/">
+		</div>
+
+		<div class="misc-buttons">
+			<input id="get-result" type="button" value="="/>
+
+			<input id="clear-calc" type="button" value="Clear">
+		</div>
+
+	</section> <!-- end of left-side -->
+
+	<section class="right-side">
+	  <div class="operand-frames" data-currOperand = 1> <!-- starting value -->
+
+		  <div class = "cc-number-wrapper"> <!-- 'cc' for 'color-coded' -->
+
+		  <ul id="operand1">
+			<!-- <li> items get added here at run time, and contain an <img> -->
+		  </ul>
+		  </div>
+
+		  <div class = "cc-number-wrapper">
+			<div class="calc-sign sel-op">
+			  <p><!-- The op. sign character ('+', '-', '*', or '/') gets
+				added here at run time, according to what the user selects --></p>
+			</div>
+
+			<ul id="operand2">
+				<!-- <li> items get added here at run time, and contain an <img> -->
+			</ul>
+
+			<hr>
+		  </div>
+
+		  <div class = "cc-number-wrapper">
+			<div class="calc-sign eq-sign">
+			  <p>=</p>
+			</div>
+
+			<ul id="result-display">
+					<!-- <li> items get added here at run time, and contain an <img> -->
+				</ul>
+		  </div>
+
+	  </div>
+
+<!-- May be useless/unnecessary:
+		<div id="op-sign">
+		</div>
+
+		<div id="operand1">
+		</div>
+
+		<div id="result">
+		</div>
+-->
+	</section> <!-- end of right-side -->
+
+</main>
+ <!-- sample ~irrelevant code:
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. App-specific content -- to be added. </p>
+        <p>Next paragraph here.</p>
+      </div>
+    </div> <!-- end of row -->
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

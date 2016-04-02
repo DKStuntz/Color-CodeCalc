@@ -1,0 +1,181 @@
+
+
+/* Color-coded digit buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+main {
+
+	position: relative;
+
+	padding: 10px;
+	margin-top: 15px;
+
+	border-style: solid;
+	border-width: 6px;
+	border-color: #00FFFF;
+
+	background-color: #FFB0B0;
+
+	max-width: 1060px;
+}
+.left-side, .right-side {
+	vertical-align: top;
+	display: inline-block;
+	margin: 15px;
+	overflow: hidden;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+
+	}
+
+
+.left-side {
+	border-color: #0000FF;
+	background-color: #E8E8FF;
+	max-width: 500px;
+}
+
+.right-side {
+	position: relative;
+  display: inline-block;
+	border-color: #808010;
+	background-color: #FFFF80;
+	max-width: 530px;
+}
+
+.digit-key-panel {
+	position: relative;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #484880;
+	padding: 10px;
+
+	background-color: #D8D8FF;
+	border-color: #404040;
+	/* width: 35%; */
+
+}
+
+#dec-point {
+	font-size: 72px;
+	background: transparent;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin: 6px auto;
+}
+.op-key-panel {
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #00D000;
+
+
+	background-color: #D8FFD8;
+
+	/*width: 35%; */
+	}
+
+.digit-key-panel input {
+	width: 60px;
+	height: 80px;
+
+}
+
+#digit0 {background-color: black;}
+#digit1 {background-color: #F6F308;}
+#digit2 {background-color: #1C1FF8;}
+#digit3 {background-color: #FA060B;}
+#digit4 {background-color: #FE730E;}
+#digit5 {background-color: white;}
+#digit6 {background-color: #09F808;}
+#digit7 {background-color: #C405F9;}
+#digit8 {background-color: #975405;}
+#digit9 {background-color: #87878C;}
+
+.operand-frames {
+
+}
+.cc-number-wrapper {
+	position: relative;
+	padding-left: 40px;
+
+}
+.operand-frames ul {
+	width: 375px;
+	height: 50px;
+	margin: 10px;
+	background-color: #A8FFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #208080;
+	padding: 3px 10px 3px 10px;
+}
+
+.cc-number-wrapper hr {
+	    margin-left: 10px;
+	    margin-right: 10px;
+		margin-bottom: 15px;
+
+	    border-width: 1px;
+	    border-color: black;
+	}
+
+#operand1 {
+
+}
+
+.operand-frames li {
+	display: inline;
+}
+
+.operand-frames img {
+	height: 100%;
+	margin: 2px;
+}
+
+#operand2 {
+
+}
+
+.op-key {
+	width: 60px;
+	height: 40px;
+	margin: 7px;
+	font-size: 30px;
+}
+
+#get-result {
+	width: 150px;
+	margin: 10px;
+	font-size: 36;
+
+	/*left: 50%; */
+}
+
+.calc-sign {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+}
+
+.calc-sign p {
+		margin: 0;
+		font-size: 36px;
+		font-weight: bold;
+}
+
+#clear-calc {
+	margin: 10px;
+
+}
+
+.active-operand {
+	border-width: 3px;
+}
+.floated-to-right {
+  text-align: right;
+}
