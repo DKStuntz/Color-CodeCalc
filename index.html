@@ -83,51 +83,65 @@
 
 	</section> <!-- end of left-side -->
 
+
 	<section class="right-side">
 	  <div class="operand-frames" data-currOperand = 1> <!-- starting value -->
 
 		  <div class = "cc-number-wrapper"> <!-- 'cc' for 'color-coded' -->
-
-		  <ul id="operand1">
-			<!-- <li> items get added here at run time, and contain an <img> -->
-		  </ul>
+        <input class="btn-m-copy" id="m-to-operand1" type="button" value="<-- M" />
+        <!-- The above element will actually appear to the right of 'operand1',
+          as it gets floated that way -->
+  		  <ul id="operand1" data-num-value = 0>
+  			<!-- <li> items get added here at run time, and contain an <img> -->
+  		  </ul>
 		  </div>
 
 		  <div class = "cc-number-wrapper">
-			<div class="calc-sign sel-op">
-			  <p><!-- The op. sign character ('+', '-', '*', or '/') gets
-				added here at run time, according to what the user selects --></p>
-			</div>
+        <input class="btn-m-copy" id="m-to-operand2" type="button" value="<-- M"/>
+        <!-- The above element will actually appear to the right of 'operand2',
+          as it gets floated that way -->
 
-			<ul id="operand2">
-				<!-- <li> items get added here at run time, and contain an <img> -->
-			</ul>
+  			<div class="calc-sign sel-op">
+  			  <p><!-- The op. sign character ('+', '-', '*', or '/') gets
+  				added here at run time, according to what the user selects --></p>
+  			</div>
 
-			<hr>
+  			<ul id="operand2" data-num-value = 0>
+  				<!-- <li> items get added here at run time, and contain an <img> -->
+  			</ul>
+  			<hr>
 		  </div>
 
 		  <div class = "cc-number-wrapper">
-			<div class="calc-sign eq-sign">
-			  <p>=</p>
-			</div>
+        <input class="btn-m-copy" id="result-to-m" type="button" value="--> M"/>
+        <!-- The above element will actually appear to the right of
+          'result-display', as it gets floated that way -->
 
-			<ul id="result-display">
-					<!-- <li> items get added here at run time, and contain an <img> -->
-				</ul>
+  			<div class="calc-sign eq-sign">
+  			  <p>=</p>
+  			</div>
+
+  			<ul id="result-display" data-num-value = 0>
+  					<!-- <li> items get added here at run time, and contain an <img> -->
+  			</ul>
 		  </div>
+
+      <div class = "cc-number-wrapper">
+        <hr>
+
+        <div id="m-wrap"> <!-- Just to "wrap" the 'M' into a container -->
+          <p> M: </p>
+        </div>
+
+        <ul id="memory-num-display" data-num-value = 0 >
+          <!-- <li> items get added here at run time, and contain an <img> -->
+        </ul>
+      </div>
 
 	  </div>
 
-<!-- May be useless/unnecessary:
-		<div id="op-sign">
-		</div>
+    <!-- The next div: for a "memory" number  -->
 
-		<div id="operand1">
-		</div>
-
-		<div id="result">
-		</div>
--->
 	</section> <!-- end of right-side -->
 
 </main>
