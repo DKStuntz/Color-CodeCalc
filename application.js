@@ -227,6 +227,23 @@ $(document).ready(function(){
 		console.log("currOperandBox = " + currOperandBox);
 	}
 
+
+
+  $('main').css({'background-color': localStorage.getItem('activeColor') || '#f00'});
+
+	// Color picker stuff
+	$('#colorpicker').spectrum({
+		color: localStorage.getItem('activeColor') || '#f00',
+		showInput: true,
+    preferredFormat: "hex",
+    change: function(color) {
+      var selectedColor = color.toHexString();
+      localStorage.setItem('activeColor', selectedColor);
+      $('main').css({'background-color': selectedColor});
+    }
+	});
+
+
 });
 
 
